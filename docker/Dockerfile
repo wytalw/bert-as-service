@@ -1,4 +1,4 @@
-FROM liushang/tensorflow-1.12.0-py3
+FROM fuleying/dg_docker
 RUN pip install bert-serving-server
 COPY ./ /app
 COPY entrypoint.sh /app
