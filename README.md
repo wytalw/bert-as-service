@@ -1,4 +1,4 @@
-<h1 align="center">bert-as-service</h1>
+<h1 align="center">bert-as-service-wmx</h1>
 
 <p align="center">Using BERT model as a sentence encoding service, i.e. mapping a variable-length sentence to a fixed-length vector.</p>
 
