@@ -1,5 +1,6 @@
 
-FROM spellrun/tensorflow-cpu:latest
+FROM tensorflow/tensorflow:1.12.0-gpu-py3
+#FROM spellrun/tensorflow-cpu:latest
 
 LABEL maintainer "wmx <418475102@qq.com>"
 
