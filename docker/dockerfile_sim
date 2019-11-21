@@ -32,8 +32,9 @@ RUN conda create -n jupyter pip python=3.6.6 \
     && echo "source activate jupyter" >> ~/.bashrc
 
 ENV PATH /root/anaconda3/envs/jupyter/bin:$PATH
-
-
+RUN pip install bert-serving-server
+COPY ./ /app
+COPY entrypoint.sh /app
+WORKDIR /app
+ENTRYPOINT ["/app/entrypoint.sh"]
 CMD []
-
-#CMD ["/bin/sh", "-c", "which python && jupyter notebook --allow-root"]
